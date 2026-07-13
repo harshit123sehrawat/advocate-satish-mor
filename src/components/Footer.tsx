@@ -351,7 +351,7 @@ export default function Footer() {
 
           {/* ── Bottom bar ── */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-charcoal-500">
-            <p>&copy; 2024 Advocate Satish Mor. All Rights Reserved.</p>
+            <p>&copy; 2026 Advocate Satish Mor. All Rights Reserved. | Last Updated: July 2026</p>
 
             <div className="flex items-center gap-1.5">
               {BOTTOM_LINKS.map((link, i) => (

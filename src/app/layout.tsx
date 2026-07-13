@@ -91,6 +91,7 @@ const jsonLd = {
       "@id": "https://advocate-satish-mor.vercel.app/#webpage",
       "url": "https://advocate-satish-mor.vercel.app/",
       "name": "Advocate Satish Mor | Lawyer & Legal Services in Chandigarh",
+      "dateModified": "2026-07-13T12:00:00.000Z",
       "isPartOf": {
         "@id": "https://advocate-satish-mor.vercel.app/#website"
       },
