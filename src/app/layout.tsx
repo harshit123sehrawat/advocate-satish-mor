@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
+import FramerProvider from "@/components/FramerProvider";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -229,7 +230,9 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased overflow-x-hidden">
-        <ThemeProvider>{children}</ThemeProvider>
+        <FramerProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </FramerProvider>
       </body>
     </html>
   );

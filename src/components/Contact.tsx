@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { FadeInLeft, FadeInRight } from "@/components/animations/AnimationWrappers";
 
 /* ───────── types ───────── */
@@ -205,7 +205,7 @@ export default function Contact() {
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         {/* ── Section header ── */}
         <div className="mb-16 flex flex-col items-center text-center w-full">
-          <motion.span
+          <m.span
             className="mb-4 inline-block rounded-full border border-[var(--border-gold)] bg-[var(--gold-500)]/10 px-5 py-1.5 text-sm font-medium tracking-wide text-[var(--text-accent)]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -213,9 +213,9 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
           >
             Contact Us
-          </motion.span>
+          </m.span>
 
-          <motion.h2
+          <m.h2
             className="section-title mt-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -224,9 +224,9 @@ export default function Contact() {
           >
             Schedule a{" "}
             <span className="gold-gradient-text">Consultation</span>
-          </motion.h2>
+          </m.h2>
 
-          <motion.div
+          <m.div
             className="gold-divider mx-auto"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
@@ -234,7 +234,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
           />
 
-          <motion.p
+          <m.p
             className="section-subtitle mx-auto mt-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -243,7 +243,7 @@ export default function Contact() {
           >
             Reach out to discuss your legal needs. We are committed to
             providing prompt, professional responses.
-          </motion.p>
+          </m.p>
         </div>
 
         {/* ── Two-column grid ── */}
@@ -492,7 +492,7 @@ export default function Contact() {
       {/* ── Success Toast ── */}
       <AnimatePresence>
         {submitted && (
-          <motion.div
+          <m.div
             role="status"
             aria-live="polite"
             initial={{ opacity: 0, y: 40 }}
@@ -522,9 +522,10 @@ export default function Contact() {
                 </svg>
               </button>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </section>
   );
 }
+

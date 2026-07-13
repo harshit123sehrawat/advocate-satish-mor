@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
 /* ================================================================
    1. WhatsApp Floating Button
@@ -37,7 +37,7 @@ export function WhatsAppButton() {
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.a
+        <m.a
           href="https://wa.me/919416280805"
           target="_blank"
           rel="noopener noreferrer"
@@ -66,7 +66,7 @@ export function WhatsAppButton() {
           >
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
           </svg>
-        </motion.a>
+        </m.a>
       )}
     </AnimatePresence>
   );
@@ -95,7 +95,7 @@ export function BackToTopButton() {
   return (
     <AnimatePresence>
       {show && (
-        <motion.button
+        <m.button
           onClick={scrollToTop}
           aria-label="Back to top"
           className="fixed bottom-[90px] right-6 z-50 flex h-11 w-11 items-center justify-center
@@ -123,7 +123,7 @@ export function BackToTopButton() {
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
           </svg>
-        </motion.button>
+        </m.button>
       )}
     </AnimatePresence>
   );
@@ -148,7 +148,7 @@ export function MobileConsultationBar() {
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.div
+        <m.div
           className="fixed inset-x-0 bottom-0 z-40 md:hidden"
           initial={{ y: 80, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -217,7 +217,7 @@ export function MobileConsultationBar() {
               <span>Book Consultation</span>
             </a>
           </div>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   );
@@ -237,7 +237,7 @@ export function LoadingScreen() {
   return (
     <AnimatePresence>
       {isLoading && (
-        <motion.div
+        <m.div
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-navy-900"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -252,14 +252,14 @@ export function LoadingScreen() {
           </div>
 
           {/* SM Initials Logo */}
-          <motion.div
+          <m.div
             className="relative flex flex-col items-center"
             initial={{ opacity: 0, scale: 0.7 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
           >
             {/* Initials */}
-            <motion.span
+            <m.span
               className="font-serif text-6xl font-bold tracking-wider
                          bg-gradient-to-br from-gold-400 via-gold-500 to-gold-300
                          bg-clip-text text-transparent
@@ -269,10 +269,10 @@ export function LoadingScreen() {
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               SM
-            </motion.span>
+            </m.span>
 
             {/* Scales / Justice Icon */}
-            <motion.div
+            <m.div
               className="mt-6"
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -290,7 +290,7 @@ export function LoadingScreen() {
                 {/* Base */}
                 <line x1="16" y1="42" x2="32" y2="42" strokeLinecap="round" strokeWidth={2} />
                 {/* Beam */}
-                <motion.line
+                <m.line
                   x1="6"
                   y1="16"
                   x2="42"
@@ -303,7 +303,7 @@ export function LoadingScreen() {
                   style={{ transformOrigin: "24px 16px" }}
                 />
                 {/* Left pan */}
-                <motion.path
+                <m.path
                   d="M6 16 C6 16, 2 26, 10 26 C18 26, 14 16, 14 16"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -312,7 +312,7 @@ export function LoadingScreen() {
                   transition={{ delay: 0.7, duration: 0.4 }}
                 />
                 {/* Right pan */}
-                <motion.path
+                <m.path
                   d="M34 16 C34 16, 30 26, 38 26 C46 26, 42 16, 42 16"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -323,10 +323,10 @@ export function LoadingScreen() {
                 {/* Top ornament */}
                 <circle cx="24" cy="6" r="2.5" fill="currentColor" stroke="none" />
               </svg>
-            </motion.div>
+            </m.div>
 
             {/* Underline */}
-            <motion.div
+            <m.div
               className="mt-4 h-0.5 rounded-full bg-gradient-to-r from-transparent via-gold-500 to-transparent"
               initial={{ width: 0 }}
               animate={{ width: 120 }}
@@ -334,25 +334,25 @@ export function LoadingScreen() {
             />
 
             {/* Tagline */}
-            <motion.p
+            <m.p
               className="mt-3 text-xs font-medium uppercase tracking-[0.3em] text-gold-300/60"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.4 }}
             >
               Advocate &amp; Legal Counsel
-            </motion.p>
-          </motion.div>
+            </m.p>
+          </m.div>
 
           {/* Loading dots */}
-          <motion.div
+          <m.div
             className="absolute bottom-12 flex gap-1.5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
             {[0, 1, 2].map((i) => (
-              <motion.div
+              <m.div
                 key={i}
                 className="h-1.5 w-1.5 rounded-full bg-gold-500/50"
                 animate={{ opacity: [0.3, 1, 0.3], scale: [0.8, 1.2, 0.8] }}
@@ -364,10 +364,11 @@ export function LoadingScreen() {
                 }}
               />
             ))}
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );
 }
+
 

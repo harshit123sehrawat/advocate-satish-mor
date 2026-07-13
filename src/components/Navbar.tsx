@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { useTheme } from "@/context/ThemeContext";
 
 /* ------------------------------------------------------------------ */
@@ -84,14 +84,14 @@ function HamburgerIcon({ open }: { open: boolean }) {
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <motion.line
+      <m.line
         x1="3"
         x2="21"
         animate={open ? { y1: 12, y2: 12, rotate: 45 } : { y1: 6, y2: 6, rotate: 0 }}
         transition={{ duration: 0.3 }}
         style={{ originX: "50%", originY: "50%" }}
       />
-      <motion.line
+      <m.line
         x1="3"
         y1="12"
         x2="21"
@@ -99,7 +99,7 @@ function HamburgerIcon({ open }: { open: boolean }) {
         animate={open ? { opacity: 0 } : { opacity: 1 }}
         transition={{ duration: 0.2 }}
       />
-      <motion.line
+      <m.line
         x1="3"
         x2="21"
         animate={open ? { y1: 12, y2: 12, rotate: -45 } : { y1: 18, y2: 18, rotate: 0 }}
@@ -163,7 +163,7 @@ export default function Navbar() {
   return (
     <>
       {/* ===== Main Navbar ===== */}
-      <motion.header
+      <m.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 120, damping: 20 }}
@@ -187,7 +187,7 @@ export default function Navbar() {
             aria-label="Go to homepage"
           >
             {/* Gold-bordered circle with initials */}
-            <motion.span
+            <m.span
               whileHover={{ scale: 1.08, rotate: 3 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-gold-500 text-sm font-bold tracking-wider font-serif"
@@ -198,7 +198,7 @@ export default function Navbar() {
               }}
             >
               SM
-            </motion.span>
+            </m.span>
 
             <span className="hidden sm:flex flex-col leading-tight">
               <span
@@ -235,7 +235,7 @@ export default function Navbar() {
                     {link.label}
                     {/* Active underline indicator */}
                     {isActive && (
-                      <motion.span
+                      <m.span
                         layoutId="nav-underline"
                         className="absolute bottom-0 left-3 right-3 h-0.5 rounded-full"
                         style={{
@@ -269,7 +269,7 @@ export default function Navbar() {
             >
               <AnimatePresence mode="wait" initial={false}>
                 {theme === "dark" ? (
-                  <motion.span
+                  <m.span
                     key="sun"
                     initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
                     animate={{ rotate: 0, opacity: 1, scale: 1 }}
@@ -277,9 +277,9 @@ export default function Navbar() {
                     transition={{ duration: 0.25 }}
                   >
                     <SunIcon />
-                  </motion.span>
+                  </m.span>
                 ) : (
-                  <motion.span
+                  <m.span
                     key="moon"
                     initial={{ rotate: 90, opacity: 0, scale: 0.5 }}
                     animate={{ rotate: 0, opacity: 1, scale: 1 }}
@@ -287,7 +287,7 @@ export default function Navbar() {
                     transition={{ duration: 0.25 }}
                   >
                     <MoonIcon />
-                  </motion.span>
+                  </m.span>
                 )}
               </AnimatePresence>
             </button>
@@ -337,14 +337,14 @@ export default function Navbar() {
             </button>
           </div>
         </nav>
-      </motion.header>
+      </m.header>
 
       {/* ===== Mobile Drawer Overlay ===== */}
       <AnimatePresence>
         {mobileOpen && (
           <>
             {/* Backdrop */}
-            <motion.div
+            <m.div
               key="backdrop"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -357,7 +357,7 @@ export default function Navbar() {
             />
 
             {/* Drawer panel */}
-            <motion.aside
+            <m.aside
               id="mobile-nav"
               key="drawer"
               initial={{ x: "100%" }}
@@ -405,7 +405,7 @@ export default function Navbar() {
                   {NAV_LINKS.map((link, idx) => {
                     const isActive = activeSection === link.href.replace("#", "");
                     return (
-                      <motion.li
+                      <m.li
                         key={link.href}
                         initial={{ opacity: 0, x: 30 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -437,7 +437,7 @@ export default function Navbar() {
                           />
                           {link.label}
                         </a>
-                      </motion.li>
+                      </m.li>
                     );
                   })}
                 </ul>
@@ -476,10 +476,11 @@ export default function Navbar() {
                   Book Consultation
                 </a>
               </div>
-            </motion.aside>
+            </m.aside>
           </>
         )}
       </AnimatePresence>
     </>
   );
 }
+

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { FadeInUp, FadeInLeft, FadeInRight } from "@/components/animations/AnimationWrappers";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -102,3 +102,4 @@ export default function ServiceLayout({ title, subtitle, children }: ServiceLayo
     </div>
   );
 }
+

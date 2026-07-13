@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect, useCallback } from "react";
-import { motion, useInView } from "framer-motion";
+import { m, useInView } from "framer-motion";
 
 /* ───────── Types ───────── */
 interface StatItem {
@@ -154,7 +154,7 @@ function StatCard({
   const count = useCounter(stat.value, isInView);
 
   return (
-    <motion.div
+    <m.div
       className="flex flex-col items-center text-center px-4 py-8 sm:py-10"
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -181,7 +181,7 @@ function StatCard({
       <span className="text-sm sm:text-base font-medium tracking-wide text-white/80 uppercase">
         {stat.label}
       </span>
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -221,4 +221,5 @@ export default function Statistics() {
     </section>
   );
 }
+
 

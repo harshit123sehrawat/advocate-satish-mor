@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { FadeInUp } from "@/components/animations/AnimationWrappers";
 
 /* ───── Types ───── */
@@ -249,7 +249,7 @@ export default function Testimonials() {
             {/* Card container — fixed height to prevent layout shifts */}
             <div className="relative mx-auto min-h-[380px] sm:min-h-[320px] max-w-[900px] w-[95%] sm:w-[85%] overflow-hidden px-2">
               <AnimatePresence mode="wait" custom={direction}>
-                <motion.figure
+                <m.figure
                   key={activeIndex}
                   custom={direction}
                   variants={slideVariants}
@@ -310,7 +310,7 @@ export default function Testimonials() {
                       </p>
                     </div>
                   </figcaption>
-                </motion.figure>
+                </m.figure>
               </AnimatePresence>
             </div>
 
@@ -344,3 +344,4 @@ export default function Testimonials() {
     </section>
   );
 }
+

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   StaggerContainer,
   staggerItem,
@@ -44,7 +44,7 @@ const propertyLaw: PracticeArea = {
 
 function AreaCard({ area, delay, index }: { area: PracticeArea, delay: number, index: number }) {
   return (
-    <motion.article
+    <m.article
       variants={staggerItem}
       className="glass-card group relative rounded-2xl p-6 sm:p-8 h-full flex flex-col text-left"
     >
@@ -123,7 +123,7 @@ function AreaCard({ area, delay, index }: { area: PracticeArea, delay: number, i
             "inset 0 0 0 1.5px var(--gold-500), 0 0 24px rgba(201,168,76,0.12)",
         }}
       />
-    </motion.article>
+    </m.article>
   );
 }
 
@@ -178,3 +178,4 @@ export default function PracticeAreas() {
     </section>
   );
 }
+

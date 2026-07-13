@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { FadeInUp } from "@/components/animations/AnimationWrappers";
 
 interface FAQItem {
@@ -81,19 +81,19 @@ function AccordionItem({
           </span>
 
           {/* Expand / collapse icon */}
-          <motion.span
+          <m.span
             animate={{ rotate: isOpen ? 45 : 0 }}
             transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
             className="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-[var(--border-gold)] flex items-center justify-center text-[var(--text-accent)] text-xl font-light select-none"
           >
             +
-          </motion.span>
+          </m.span>
         </button>
 
         {/* Answer panel */}
         <AnimatePresence initial={false}>
           {isOpen && (
-            <motion.div
+            <m.div
               id={`faq-answer-${index}`}
               role="region"
               aria-labelledby={`faq-question-${index}`}
@@ -115,7 +115,7 @@ function AccordionItem({
                   {item.answer}
                 </p>
               </div>
-            </motion.div>
+            </m.div>
           )}
         </AnimatePresence>
       </div>
@@ -178,4 +178,5 @@ export default function FAQ() {
     </section>
   );
 }
+
 

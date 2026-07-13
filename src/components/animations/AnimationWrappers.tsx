@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, ReactNode } from "react";
-import { motion, useInView, Variant } from "framer-motion";
+import { LazyMotion, domAnimation, m, useInView, Variant } from "framer-motion";
 
 interface AnimationProps {
   children: ReactNode;
@@ -23,15 +23,17 @@ export function FadeInUp({
   const isInView = useInView(ref, { once, margin: "-50px" });
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0, y: 40 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-      transition={{ duration, delay, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
-    >
-      {children}
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        ref={ref}
+        className={className}
+        initial={{ opacity: 0, y: 40 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+        transition={{ duration, delay, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
+      >
+        {children}
+      </m.div>
+    </LazyMotion>
   );
 }
 
@@ -47,15 +49,17 @@ export function FadeInLeft({
   const isInView = useInView(ref, { once, margin: "-50px" });
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0, x: -40 }}
-      animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -40 }}
-      transition={{ duration, delay, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
-    >
-      {children}
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        ref={ref}
+        className={className}
+        initial={{ opacity: 0, x: -40 }}
+        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -40 }}
+        transition={{ duration, delay, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
+      >
+        {children}
+      </m.div>
+    </LazyMotion>
   );
 }
 
@@ -71,15 +75,17 @@ export function FadeInRight({
   const isInView = useInView(ref, { once, margin: "-50px" });
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0, x: 40 }}
-      animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
-      transition={{ duration, delay, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
-    >
-      {children}
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        ref={ref}
+        className={className}
+        initial={{ opacity: 0, x: 40 }}
+        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
+        transition={{ duration, delay, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
+      >
+        {children}
+      </m.div>
+    </LazyMotion>
   );
 }
 
@@ -95,15 +101,17 @@ export function ScaleIn({
   const isInView = useInView(ref, { once, margin: "-50px" });
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-      transition={{ duration, delay, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
-    >
-      {children}
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        ref={ref}
+        className={className}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+        transition={{ duration, delay, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
+      >
+        {children}
+      </m.div>
+    </LazyMotion>
   );
 }
 
@@ -123,22 +131,24 @@ export function StaggerContainer({
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      variants={{
-        hidden: {},
-        visible: {
-          transition: {
-            staggerChildren: staggerDelay,
+    <LazyMotion features={domAnimation}>
+      <m.div
+        ref={ref}
+        className={className}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: staggerDelay,
+            },
           },
-        },
-      }}
-    >
-      {children}
-    </motion.div>
+        }}
+      >
+        {children}
+      </m.div>
+    </LazyMotion>
   );
 }
 

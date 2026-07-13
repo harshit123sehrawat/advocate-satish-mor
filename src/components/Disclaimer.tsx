@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
 /* ------------------------------------------------------------------ */
 /*  Constants                                                          */
@@ -89,7 +89,7 @@ export default function Disclaimer() {
       {visible && (
         <>
           {/* Backdrop overlay */}
-          <motion.div
+          <m.div
             className="fixed inset-0 z-[9998] bg-navy-900/60 backdrop-blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -100,7 +100,7 @@ export default function Disclaimer() {
           />
 
           {/* Disclaimer banner / modal */}
-          <motion.div
+          <m.div
             role="dialog"
             aria-modal="true"
             aria-label="Legal Disclaimer"
@@ -163,14 +163,14 @@ export default function Disclaimer() {
 
                     {/* Actions */}
                     <div className="flex items-center gap-4 pt-1">
-                      <motion.button
+                      <m.button
                         onClick={handleAccept}
                         className="btn-primary text-sm py-2.5 px-8 rounded-lg"
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 0.97 }}
                       >
                         I Understand
-                      </motion.button>
+                      </m.button>
                       <span className="text-xs text-charcoal-500">
                         By continuing, you accept this disclaimer.
                       </span>
@@ -182,9 +182,10 @@ export default function Disclaimer() {
                 <div className="absolute bottom-0 inset-x-0 h-0.5 bg-gradient-to-r from-transparent via-gold-500/40 to-transparent" />
               </div>
             </div>
-          </motion.div>
+          </m.div>
         </>
       )}
     </AnimatePresence>
   );
 }
+

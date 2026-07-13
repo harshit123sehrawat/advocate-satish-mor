@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 /* ------------------------------------------------------------------ */
 /*  Animation variants                                                 */
@@ -230,25 +230,25 @@ export default function Hero() {
       </div>
 
       {/* ---- main content ---- */}
-      <motion.div
+      <m.div
         className="relative z-10 mx-auto w-full max-w-7xl flex-1 flex flex-col justify-center items-center text-center px-6 sm:px-8 lg:px-12 pt-28 pb-16 md:pt-32 md:pb-20"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         {/* gold divider accent */}
-        <motion.div variants={fadeUp} className="gold-divider mb-6" />
+        <m.div variants={fadeUp} className="gold-divider mb-6" />
 
         {/* heading */}
-        <motion.h1
+        <m.h1
           variants={fadeUp}
           className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.2] tracking-tight max-w-4xl"
         >
           <strong>Advocate Satish Mor</strong>  Experienced <span className="gold-gradient-text">Criminal &amp; Civil Lawyer</span> in Punjab and Haryana High Court
-        </motion.h1>
+        </m.h1>
 
         {/* subheading */}
-        <motion.div
+        <m.div
           variants={fadeUp}
           className="mt-8 mx-auto w-full max-w-3xl flex flex-wrap justify-center gap-x-4 gap-y-3 sm:gap-x-6 sm:gap-y-4 text-base sm:text-lg lg:text-xl font-medium"
           style={{ color: "var(--text-secondary)" }}
@@ -259,10 +259,10 @@ export default function Hero() {
           <span className="flex items-center gap-2"><span className="text-[var(--gold-500)]">•</span> Property Disputes</span>
           <span className="flex items-center gap-2"><span className="text-[var(--gold-500)]">•</span> Civil Litigation</span>
           <span className="flex items-center gap-2"><span className="text-[var(--gold-500)]">•</span> Legal Consultation</span>
-        </motion.div>
+        </m.div>
 
         {/* CTA buttons */}
-        <motion.div
+        <m.div
           variants={fadeUp}
           className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
         >
@@ -277,11 +277,11 @@ export default function Hero() {
             <PhoneIcon />
             Call Now
           </a>
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
 
       {/* ---- stats bar ---- */}
-      <motion.div
+      <m.div
         className="relative z-10 w-full shrink-0"
         variants={statsBarVariants}
         initial="hidden"
@@ -290,7 +290,7 @@ export default function Hero() {
         <div className="mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12 pb-10 md:pb-14">
           <div className="glass-card rounded-2xl px-6 py-6 md:px-10 md:py-8 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-0 sm:divide-x divide-[var(--border-light)]">
             {stats.map((stat) => (
-              <motion.div
+              <m.div
                 key={stat.label}
                 variants={statItem}
                 className="flex flex-col items-center text-center px-4"
@@ -306,11 +306,11 @@ export default function Hero() {
                 >
                   {stat.label}
                 </span>
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </div>
-      </motion.div>
+      </m.div>
 
       {/* ---- bottom gradient overlay for section transition ---- */}
       <div
@@ -323,4 +323,5 @@ export default function Hero() {
     </header>
   );
 }
+
 

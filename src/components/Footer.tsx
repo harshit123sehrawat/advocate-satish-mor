@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { FadeInUp, FadeInLeft, FadeInRight, StaggerContainer, staggerItem } from "@/components/animations/AnimationWrappers";
 
 /* ------------------------------------------------------------------ */
@@ -185,7 +185,7 @@ function SocialButton({
   children: React.ReactNode;
 }) {
   return (
-    <motion.a
+    <m.a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -195,7 +195,7 @@ function SocialButton({
       whileTap={{ scale: 0.95 }}
     >
       {children}
-    </motion.a>
+    </m.a>
   );
 }
 
@@ -271,7 +271,7 @@ export default function Footer() {
               <nav aria-label="Footer Quick Links">
                 <StaggerContainer className="space-y-3" staggerDelay={0.05}>
                   {QUICK_LINKS.map((link) => (
-                    <motion.div key={link.label} variants={staggerItem}>
+                    <m.div key={link.label} variants={staggerItem}>
                       <a
                         href={link.href}
                         className="flex items-center gap-2 text-sm text-charcoal-400 hover:text-gold-400 transition-colors duration-300 group"
@@ -279,7 +279,7 @@ export default function Footer() {
                         <span className="w-1.5 h-1.5 rounded-full bg-gold-500/40 group-hover:bg-gold-400 transition-colors duration-300" />
                         {link.label}
                       </a>
-                    </motion.div>
+                    </m.div>
                   ))}
                 </StaggerContainer>
               </nav>
@@ -291,7 +291,7 @@ export default function Footer() {
               <nav aria-label="Footer Practice Areas">
                 <StaggerContainer className="space-y-3" staggerDelay={0.05}>
                   {PRACTICE_AREAS.map((area) => (
-                    <motion.div key={area.label} variants={staggerItem}>
+                    <m.div key={area.label} variants={staggerItem}>
                       <a
                         href={area.href}
                         className="flex items-center gap-2 text-sm text-charcoal-400 hover:text-gold-400 transition-colors duration-300 group"
@@ -299,7 +299,7 @@ export default function Footer() {
                         <span className="w-1.5 h-1.5 rounded-full bg-gold-500/40 group-hover:bg-gold-400 transition-colors duration-300" />
                         {area.label}
                       </a>
-                    </motion.div>
+                    </m.div>
                   ))}
                 </StaggerContainer>
               </nav>
@@ -373,7 +373,7 @@ export default function Footer() {
       </div>
 
       {/* ── Back to top ── */}
-      <motion.button
+      <m.button
         onClick={scrollToTop}
         aria-label="Back to top"
         className="fixed bottom-24 right-6 z-40 flex items-center justify-center w-10 h-10 rounded-full bg-navy-800 border border-gold-500/30 text-gold-400 shadow-lg shadow-navy-900/50 hover:bg-gold-500 hover:text-navy-900 hover:border-gold-500 transition-all duration-300"
@@ -384,7 +384,8 @@ export default function Footer() {
         transition={{ delay: 1 }}
       >
         <ArrowUpIcon />
-      </motion.button>
+      </m.button>
     </footer>
   );
 }
+
