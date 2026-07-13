@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import { LoadingScreen } from "@/components/FloatingElements";
+import LoadingScreen from "@/components/LoadingScreen";
 
 // Dynamically import below-the-fold components to reduce unused JavaScript
 const About = dynamic(() => import("@/components/About"));
