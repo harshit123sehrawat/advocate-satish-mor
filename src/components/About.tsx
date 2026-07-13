@@ -248,13 +248,13 @@ export default function About() {
                 style={{ color: "var(--text-secondary)", lineHeight: 1.8 }}
               >
                 <p>
-                  Advocate Satish Mor is a highly respected legal professional in Chandigarh with over 6 years of extensive experience representing clients before the Punjab &amp; Haryana High Court and District Courts.
+                  <strong>Advocate Satish Mor</strong> is a highly respected legal professional in Chandigarh with over 6+ years of extensive experience representing clients before the Punjab &amp; Haryana High Court and District Courts.
                 </p>
                 <p>
                   As an expert in both <strong>Criminal Litigation</strong> and <strong>Property Litigation</strong>, he handles a diverse range of complex cases. From bail matters, FIR quashing, and criminal defense to property disputes, civil disputes, and real estate litigation, his practice is built on a foundation of strong legal research and strategic court representation.
                 </p>
                 <p>
-                  Whether you need meticulous legal documentation, insightful client counseling, or aggressive courtroom advocacy, Advocate Mor is committed to protecting your rights and delivering ethical, results-oriented legal solutions.
+                  Whether you need meticulous legal documentation, insightful client counseling, or aggressive courtroom advocacy, <strong>Advocate Satish Mor</strong> is committed to protecting your rights and delivering ethical, results-oriented legal solutions.
                 </p>
               </div>
 
