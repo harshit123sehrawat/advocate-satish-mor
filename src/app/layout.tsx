@@ -103,7 +103,7 @@ const jsonLd = {
       }
     },
     {
-      "@type": "LegalService",
+      "@type": ["LegalService", "Organization", "LocalBusiness"],
       "@id": "https://advocate-satish-mor.vercel.app/#legalservice",
       "name": "Advocate Satish Mor",
       "legalName": "Satish Mor",
@@ -174,6 +174,36 @@ const jsonLd = {
           }
         ]
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://advocate-satish-mor.vercel.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you handle civil cases in Chandigarh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Advocate Satish Mor extensively handles civil litigation and dispute resolution at the Punjab & Haryana High Court in Chandigarh."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are property disputes handled?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We handle property disputes through thorough title verification, mediation when possible, and aggressive civil litigation when necessary to protect your ownership rights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can consultations happen online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer secure online legal consultations via video call or phone for clients who cannot visit our Chandigarh office in person."
+          }
+        }
+      ]
     }
   ]
 };
