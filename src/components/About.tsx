@@ -1,6 +1,7 @@
 "use client";
 
 import { FadeInLeft, FadeInRight, FadeInUp } from "@/components/animations/AnimationWrappers";
+import Image from "next/image";
 
 /* ── Icon components ────────────────────────────────────────────── */
 
@@ -153,44 +154,38 @@ export default function About() {
 
               {/* Inner photo container */}
               <div
-                className="relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl"
+                className="relative flex aspect-[3/4] sm:aspect-[4/5] lg:aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl shadow-2xl"
                 style={{
                   background:
                     "linear-gradient(160deg, var(--navy-800) 0%, var(--navy-700) 40%, var(--navy-600) 100%)",
+                  boxShadow: "0 25px 50px -12px rgba(10, 22, 40, 0.5)"
                 }}
               >
-                {/* Subtle pattern overlay */}
-                <div
-                  className="absolute inset-0 opacity-[0.04]"
+                <Image
+                  src="/advocate-satish-mor.jpg"
+                  alt="Advocate Satish Mor – Criminal, Civil and Property Lawyer"
+                  fill
+                  className="object-cover transition-transform duration-700 hover:scale-105"
+                  style={{ objectPosition: "top center" }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  quality={90}
+                  priority
+                />
+
+                {/* Premium Vignette / Edge darkening to mute the background */}
+                <div 
+                  className="absolute inset-0 pointer-events-none"
                   style={{
-                    backgroundImage:
-                      "repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.1) 20px, rgba(255,255,255,0.1) 21px)",
+                    background: "radial-gradient(ellipse at 50% 25%, transparent 35%, rgba(10, 22, 40, 0.75) 100%)"
                   }}
                 />
 
-                {/* Radial glow behind initials */}
+                {/* Bottom dark navy gradient overlay to blend naturally */}
                 <div
-                  className="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full blur-[80px]"
+                  className="absolute inset-x-0 bottom-0 h-1/2 pointer-events-none"
                   style={{
                     background:
-                      "radial-gradient(circle, rgba(201,168,76,0.18) 0%, transparent 70%)",
-                  }}
-                />
-
-                {/* Initials */}
-                <span
-                  className="gold-gradient-text relative select-none font-serif text-8xl font-bold tracking-wider sm:text-9xl"
-                >
-                  SM
-                </span>
-
-                {/* Bottom vignette */}
-                <div
-                  className="absolute inset-x-0 bottom-0 h-1/3"
-                  style={{
-                    background:
-                      "linear-gradient(to top, var(--navy-900), transparent)",
-                    opacity: 0.5,
+                      "linear-gradient(to top, var(--navy-900) 0%, rgba(10, 22, 40, 0.5) 40%, transparent 100%)",
                   }}
                 />
               </div>
