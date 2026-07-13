@@ -244,7 +244,7 @@ export default function Hero() {
           variants={fadeUp}
           className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.2] tracking-tight max-w-4xl"
         >
-          <strong>Advocate Satish Mor</strong>  Experienced <span className="gold-gradient-text">Criminal &amp; Civil Lawyer</span> in Punjab and Haryana High Court
+          <strong>Advocate Satish Mor</strong>  Experienced <span className="gold-gradient-text">Criminal &amp; Civil Lawyer</span> in <a href="https://highcourtchd.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-gold-500/30 hover:decoration-gold-500 transition-colors">Punjab and Haryana High Court</a>
         </m.h1>
 
         {/* subheading */}

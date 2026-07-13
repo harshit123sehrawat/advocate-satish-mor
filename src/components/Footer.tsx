@@ -30,6 +30,14 @@ const PRACTICE_AREAS: FooterLink[] = [
   { label: "Legal Consultation", href: "#practice-areas" },
 ];
 
+const LEGAL_RESOURCES: FooterLink[] = [
+  { label: "Punjab & Haryana High Court", href: "https://highcourtchd.gov.in/" },
+  { label: "Supreme Court of India", href: "https://main.sci.gov.in/" },
+  { label: "Bar Council of India", href: "http://www.barcouncilofindia.org/" },
+  { label: "eCourts Services", href: "https://ecourts.gov.in/ecourts_home/" },
+  { label: "Ministry of Law & Justice", href: "https://lawmin.gov.in/" },
+];
+
 const BOTTOM_LINKS: FooterLink[] = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms" },
@@ -227,8 +235,8 @@ export default function Footer() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-8">
-          {/* ── 4-column grid ── */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          {/* ── 5-column grid ── */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
             {/* Column 1 — Brand */}
             <FadeInUp delay={0} className="md:col-span-2 lg:col-span-1">
               <div className="space-y-5">
@@ -305,8 +313,30 @@ export default function Footer() {
               </nav>
             </FadeInUp>
 
-            {/* Column 4 — Contact */}
+            {/* Column 4 — Legal Resources */}
             <FadeInUp delay={0.3}>
+              <FooterColumnTitle>Legal Resources</FooterColumnTitle>
+              <nav aria-label="Footer Legal Resources">
+                <StaggerContainer className="space-y-3" staggerDelay={0.05}>
+                  {LEGAL_RESOURCES.map((resource) => (
+                    <m.div key={resource.label} variants={staggerItem}>
+                      <a
+                        href={resource.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm text-charcoal-400 hover:text-gold-400 transition-colors duration-300 group"
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold-500/40 group-hover:bg-gold-400 transition-colors duration-300" />
+                        {resource.label}
+                      </a>
+                    </m.div>
+                  ))}
+                </StaggerContainer>
+              </nav>
+            </FadeInUp>
+
+            {/* Column 5 — Contact */}
+            <FadeInUp delay={0.4}>
               <FooterColumnTitle>Contact</FooterColumnTitle>
               <div className="space-y-4">
                 {/* Phone */}
