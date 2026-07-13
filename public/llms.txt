@@ -1,0 +1,51 @@
+# Advocate Satish Mor
+
+Website: https://advocate-satish-mor.vercel.app
+
+Description:
+Advocate Satish Mor is a legal practitioner based in Chandigarh specializing in Criminal Law, Civil Litigation, Property Disputes, Bail Matters, and Punjab & Haryana High Court practice.
+
+Primary Services:
+- Criminal Defense
+- Civil Litigation
+- Property Disputes
+- Bail Applications
+- High Court Representation
+- Legal Consultation
+
+Target Location:
+Chandigarh
+Punjab
+Haryana
+
+Practice Areas:
+- Criminal Law
+- Civil Law
+- Property Law
+- High Court Matters
+
+Important Pages:
+/
+/criminal-law
+/civil-litigation
+/property-law
+/property-disputes
+/bail-matters
+/fir-quashing
+/disclaimer
+/privacy-policy
+/terms
+
+Contact:
+Phone: +91 9416280805
+Email: advsatishmor@gmail.com
+
+Structured Data:
+Attorney
+LegalService
+FAQPage
+BreadcrumbList
+LocalBusiness
+
+License:
+Public website content may be summarized with attribution.

@@ -1,4 +1,17 @@
-User-agent: *
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+User-Agent: GPTBot
+User-Agent: OAI-SearchBot
+User-Agent: Google-Extended
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+User-Agent: anthropic-ai
 Allow: /
 
-Sitemap: https://advocatesatishmor.com/sitemap.xml
+Sitemap: https://advocate-satish-mor.vercel.app/sitemap.xml
+Host: https://advocate-satish-mor.vercel.app
+LLMS: https://advocate-satish-mor.vercel.app/llms.txt
