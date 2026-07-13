@@ -1,0 +1,16 @@
+{
+  "name": "Advocate Satish Mor",
+  "short_name": "Advocate Mor",
+  "description": "Property, Criminal & Civil Lawyer in Chandigarh — Punjab & Haryana High Court",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#b8942a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

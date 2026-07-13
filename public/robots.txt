@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://advocatesatishmor.com/sitemap.xml
