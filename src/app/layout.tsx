@@ -13,28 +13,18 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://advocatesatishmor.com"),
-  title: "Advocate Satish Mor | Property, Criminal & Civil Lawyer in Chandigarh",
+  metadataBase: new URL("https://advocate-satish-mor.vercel.app"),
+  title: "Advocate Satish Mor | Lawyer & Legal Services in Chandigarh",
   description:
-    "Experienced Advocate Satish Mor handling property disputes, criminal cases, and civil litigation at Punjab & Haryana High Court. Book your consultation in Chandigarh today.",
+    "Official website of Advocate Satish Mor. Legal consultation and representation for Criminal Law, Property Disputes, and Civil Litigation in Chandigarh, Punjab & Haryana. Contact for appointments.",
   keywords: [
     "Criminal Lawyer in Chandigarh",
-    "Criminal Advocate in Chandigarh",
-    "Best Criminal Lawyer Chandigarh",
     "Property Lawyer Chandigarh",
+    "Best Criminal Lawyer Chandigarh",
     "Property Dispute Lawyer",
     "Criminal Defense Lawyer",
-    "Bail Lawyer Chandigarh",
-    "High Court Advocate Chandigarh",
-    "Punjab and Haryana High Court Lawyer",
-    "Civil and Criminal Lawyer",
-    "Civil Lawyer Chandigarh",
-    "Real Estate Lawyer Chandigarh",
-    "Legal Consultation Chandigarh",
     "Civil Litigation Chandigarh",
-    "Inheritance Lawyer Chandigarh",
-    "Property Advocate Chandigarh",
-    "Land Dispute Lawyer Chandigarh",
+    "High Court Advocate Chandigarh",
   ],
   authors: [{ name: "Advocate Satish Mor" }],
   creator: "Advocate Satish Mor",
@@ -50,171 +40,140 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
   openGraph: {
     type: "website",
-    locale: "en_IN",
-    url: "https://advocatesatishmor.com",
     siteName: "Advocate Satish Mor",
-    title: "Advocate Satish Mor | Property, Criminal & Civil Lawyer in Chandigarh",
+    title: "Advocate Satish Mor | Lawyer & Legal Services in Chandigarh",
     description:
-      "Experienced Advocate Satish Mor handling property disputes, criminal cases, and civil litigation at Punjab & Haryana High Court. Book your legal consultation in Chandigarh today.",
+      "Official website of Advocate Satish Mor for legal consultation, representation, and services in Chandigarh, Punjab & Haryana.",
+    url: "https://advocate-satish-mor.vercel.app/",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Advocate Satish Mor - Property & Civil Law Expert in Chandigarh",
+        alt: "Advocate Satish Mor official website preview",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Advocate Satish Mor | Property, Criminal & Civil Lawyer in Chandigarh",
+    title: "Advocate Satish Mor | Lawyer & Legal Services in Chandigarh",
     description:
-      "Experienced Advocate Satish Mor handling property disputes, criminal cases, and civil litigation at Punjab & Haryana High Court. Book your legal consultation in Chandigarh today.",
+      "Official website of Advocate Satish Mor for legal consultation, representation, and services in Chandigarh, Punjab & Haryana.",
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://advocatesatishmor.com",
-  },
-  verification: {
-    google: "google-site-verification-placeholder",
+    canonical: "https://advocate-satish-mor.vercel.app/",
   },
 };
 
-/* Schema.org structured data */
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["LegalService", "LocalBusiness", "Organization"],
-      "@id": "https://advocatesatishmor.com/#organization",
+      "@type": "WebSite",
+      "@id": "https://advocate-satish-mor.vercel.app/#website",
+      "url": "https://advocate-satish-mor.vercel.app/",
       "name": "Advocate Satish Mor",
-      "url": "https://advocatesatishmor.com",
-      "logo": "https://advocatesatishmor.com/logo.png",
-      "image": "https://advocatesatishmor.com/og-image.png",
-      "description": "Professional legal services in Chandigarh specializing in criminal defense, property law, civil litigation, and real estate matters.",
-      "telephone": "+919416280805",
+      "description": "Official website of Advocate Satish Mor.",
+      "publisher": {
+        "@id": "https://advocate-satish-mor.vercel.app/#legalservice"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://advocate-satish-mor.vercel.app/#webpage",
+      "url": "https://advocate-satish-mor.vercel.app/",
+      "name": "Advocate Satish Mor | Lawyer & Legal Services in Chandigarh",
+      "isPartOf": {
+        "@id": "https://advocate-satish-mor.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://advocate-satish-mor.vercel.app/#legalservice"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://advocate-satish-mor.vercel.app/og-image.png"
+      }
+    },
+    {
+      "@type": "LegalService",
+      "@id": "https://advocate-satish-mor.vercel.app/#legalservice",
+      "name": "Advocate Satish Mor",
+      "legalName": "Satish Mor",
+      "url": "https://advocate-satish-mor.vercel.app/",
+      "image": "https://advocate-satish-mor.vercel.app/og-image.png",
+      "logo": "https://advocate-satish-mor.vercel.app/logo.png",
+      "description": "Legal consultation and representation by Advocate Satish Mor.",
+      "telephone": "+91-9416280805",
       "email": "advsatishmor@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Punjab & Haryana High Court",
         "addressLocality": "Chandigarh",
-        "addressRegion": "CH",
+        "addressRegion": "Chandigarh",
         "postalCode": "160001",
         "addressCountry": "IN"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "30.7412",
-        "longitude": "76.7684"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "priceRange": "$$",
       "areaServed": [
-        {
-          "@type": "State",
-          "name": "Punjab"
-        },
-        {
-          "@type": "State",
-          "name": "Haryana"
-        },
         {
           "@type": "City",
           "name": "Chandigarh"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Punjab"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Haryana"
         }
       ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-94162-80805",
-        "contactType": "customer service",
-        "areaServed": "IN",
-        "availableLanguage": ["en", "hi", "pa"]
+      "priceRange": "₹₹",
+      "founder": {
+        "@type": "Person",
+        "name": "Satish Mor",
+        "jobTitle": "Advocate"
       },
       "sameAs": [
-        "https://www.linkedin.com/in/placeholder",
-        "https://twitter.com/placeholder"
-      ]
-    },
-    {
-      "@type": "Attorney",
-      "@id": "https://advocatesatishmor.com/#person",
-      "name": "Satish Mor",
-      "jobTitle": "Advocate",
-      "worksFor": {
-        "@id": "https://advocatesatishmor.com/#organization"
-      },
-      "url": "https://advocatesatishmor.com",
-      "alumniOf": {
-        "@type": "Organization",
-        "name": "Panjab University"
+        "https://www.linkedin.com/in/satish-mor"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Legal Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Criminal Law",
+              "serviceType": "Criminal Defense and Representation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Property Law",
+              "serviceType": "Property Dispute Resolution"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Civil Law",
+              "serviceType": "Civil Litigation and Dispute Resolution"
+            }
+          }
+        ]
       }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://advocatesatishmor.com/#website",
-      "url": "https://advocatesatishmor.com",
-      "name": "Advocate Satish Mor",
-      "publisher": {
-        "@id": "https://advocatesatishmor.com/#organization"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://advocatesatishmor.com/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does legal consultation cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Consultation fees vary depending on the complexity of the matter. Please contact us directly to discuss your case and get an accurate estimate."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I hire an advocate in Chandigarh?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You can hire an advocate by scheduling an initial consultation, discussing your legal matter, and signing a formal engagement agreement."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you appear before Punjab & Haryana High Court?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Advocate Satish Mor extensively practices and appears before the Punjab & Haryana High Court in Chandigarh."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can consultations happen online?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we offer secure online legal consultations via video call or phone for clients who cannot visit our Chandigarh office in person."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How are property disputes handled?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We handle property disputes through thorough title verification, mediation when possible, and aggressive civil litigation when necessary to protect your ownership rights."
-          }
-        }
-      ]
     }
   ]
 };
