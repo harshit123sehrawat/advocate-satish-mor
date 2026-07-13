@@ -64,7 +64,7 @@ function getInitials(name: string): string {
 /* ───── Sub-components ───── */
 function StarRating({ count }: { count: number }) {
   return (
-    <div className="flex justify-center gap-1" aria-label={`${count} out of 5 stars`}>
+    <div role="img" className="flex justify-center gap-1" aria-label={`${count} out of 5 stars`}>
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
