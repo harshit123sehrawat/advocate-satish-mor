@@ -1,20 +1,22 @@
+import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import PracticeAreas from "@/components/PracticeAreas";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import Statistics from "@/components/Statistics";
-import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Disclaimer from "@/components/Disclaimer";
-import {
-  WhatsAppButton,
-  BackToTopButton,
-  MobileConsultationBar,
-  LoadingScreen,
-} from "@/components/FloatingElements";
+import { LoadingScreen } from "@/components/FloatingElements";
+
+// Dynamically import below-the-fold components to reduce unused JavaScript
+const About = dynamic(() => import("@/components/About"));
+const PracticeAreas = dynamic(() => import("@/components/PracticeAreas"));
+const WhyChooseUs = dynamic(() => import("@/components/WhyChooseUs"));
+const Statistics = dynamic(() => import("@/components/Statistics"));
+const Testimonials = dynamic(() => import("@/components/Testimonials"));
+const FAQ = dynamic(() => import("@/components/FAQ"));
+const Contact = dynamic(() => import("@/components/Contact"));
+const Footer = dynamic(() => import("@/components/Footer"));
+const Disclaimer = dynamic(() => import("@/components/Disclaimer"));
+
+const WhatsAppButton = dynamic(() => import("@/components/FloatingElements").then((mod) => mod.WhatsAppButton));
+const BackToTopButton = dynamic(() => import("@/components/FloatingElements").then((mod) => mod.BackToTopButton));
+const MobileConsultationBar = dynamic(() => import("@/components/FloatingElements").then((mod) => mod.MobileConsultationBar));
 
 export default function Home() {
   return (
