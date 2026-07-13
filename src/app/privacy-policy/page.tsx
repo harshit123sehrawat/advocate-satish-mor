@@ -4,7 +4,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Advocate Satish Mor",
-  description: "Privacy policy and data protection guidelines for Advocate Satish Mor.",
+  description: "Read the official privacy policy of Advocate Satish Mor. Learn how your personal data is collected, protected, and used for legal services in Chandigarh.",
+  openGraph: {
+    description: "Read the official privacy policy of Advocate Satish Mor. Learn how your personal data is collected, protected, and used for legal services in Chandigarh.",
+  },
+  twitter: {
+    description: "Read the official privacy policy of Advocate Satish Mor. Learn how your personal data is collected, protected, and used for legal services in Chandigarh.",
+  },
 };
 
 export default function PrivacyPolicy() {

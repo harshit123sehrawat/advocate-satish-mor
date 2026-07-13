@@ -3,8 +3,14 @@ import ServiceLayout from "@/components/ServiceLayout";
 
 export const metadata: Metadata = {
   title: "Property Lawyer in Chandigarh | Advocate Satish Mor",
-  description: "Experienced Property Lawyer in Chandigarh specializing in property disputes, title verification, partition suits, and real estate litigation at High Court.",
+  description: "Resolve property disputes efficiently in Chandigarh with Advocate Satish Mor. Expert in title verification, civil litigation and real estate solutions.",
   keywords: ["Property Lawyer Chandigarh", "Property Dispute Lawyer", "Real Estate Lawyer Chandigarh", "Land Dispute Lawyer Chandigarh", "Property Advocate Chandigarh"],
+  openGraph: {
+    description: "Resolve property disputes efficiently in Chandigarh with Advocate Satish Mor. Expert in title verification, civil litigation and real estate solutions.",
+  },
+  twitter: {
+    description: "Resolve property disputes efficiently in Chandigarh with Advocate Satish Mor. Expert in title verification, civil litigation and real estate solutions.",
+  },
 };
 
 export default function PropertyLawPage() {

@@ -3,8 +3,14 @@ import ServiceLayout from "@/components/ServiceLayout";
 
 export const metadata: Metadata = {
   title: "Property Dispute Lawyer in Chandigarh | Land Dispute Advocate Satish Mor",
-  description: "Expert Property Dispute Lawyer resolving land disputes, partition suits, illegal possession, and boundary conflicts in Chandigarh and Punjab & Haryana High Court.",
+  description: "Protect your assets with trusted legal help for property disputes in Chandigarh. Advocate Satish Mor specializes in partitions and real estate litigation.",
   keywords: ["Property Dispute Lawyer Chandigarh", "Land Dispute Lawyer Chandigarh", "Illegal Possession Lawyer", "Partition Suit Lawyer", "Property Advocate Chandigarh"],
+  openGraph: {
+    description: "Protect your assets with trusted legal help for property disputes in Chandigarh. Advocate Satish Mor specializes in partitions and real estate litigation.",
+  },
+  twitter: {
+    description: "Protect your assets with trusted legal help for property disputes in Chandigarh. Advocate Satish Mor specializes in partitions and real estate litigation.",
+  },
 };
 
 export default function PropertyDisputesPage() {

@@ -3,8 +3,14 @@ import ServiceLayout from "@/components/ServiceLayout";
 
 export const metadata: Metadata = {
   title: "Criminal Lawyer in Chandigarh | Advocate Satish Mor",
-  description: "Top Criminal Lawyer in Chandigarh offering expert defense in bail matters, criminal trials, FIR quashing, and white-collar crimes at Punjab & Haryana High Court.",
+  description: "Expert criminal defense in Chandigarh by Advocate Satish Mor. We handle bail matters, FIR quashing, and High Court trials for optimal legal results.",
   keywords: ["Criminal Lawyer in Chandigarh", "Best Criminal Lawyer Chandigarh", "Criminal Advocate in Chandigarh", "Criminal Defense Lawyer"],
+  openGraph: {
+    description: "Expert criminal defense in Chandigarh by Advocate Satish Mor. We handle bail matters, FIR quashing, and High Court trials for optimal legal results.",
+  },
+  twitter: {
+    description: "Expert criminal defense in Chandigarh by Advocate Satish Mor. We handle bail matters, FIR quashing, and High Court trials for optimal legal results.",
+  },
 };
 
 export default function CriminalLawPage() {

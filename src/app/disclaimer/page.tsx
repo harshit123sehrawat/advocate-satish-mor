@@ -4,7 +4,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Disclaimer | Advocate Satish Mor",
-  description: "Legal disclaimer as per Bar Council of India regulations.",
+  description: "Read the legal disclaimer for Advocate Satish Mor. This website provides general information and does not constitute formal legal advice or attorney bond.",
+  openGraph: {
+    description: "Read the legal disclaimer for Advocate Satish Mor. This website provides general information and does not constitute formal legal advice or attorney bond.",
+  },
+  twitter: {
+    description: "Read the legal disclaimer for Advocate Satish Mor. This website provides general information and does not constitute formal legal advice or attorney bond.",
+  },
 };
 
 export default function DisclaimerPage() {

@@ -3,8 +3,14 @@ import ServiceLayout from "@/components/ServiceLayout";
 
 export const metadata: Metadata = {
   title: "FIR Quashing Lawyer in Chandigarh | High Court Advocate Satish Mor",
-  description: "Experienced High Court Lawyer for FIR Quashing under Section 482 CrPC / BNSS. Get false and frivolous criminal cases dismissed by the Punjab & Haryana High Court.",
+  description: "Seek justice with expert FIR quashing services in Chandigarh. Advocate Satish Mor provides aggressive representation to protect your legal rights.",
   keywords: ["FIR Quashing Lawyer Chandigarh", "High Court Advocate Chandigarh", "Section 482 CrPC Quashing", "Cancel False FIR", "Criminal Defense Lawyer"],
+  openGraph: {
+    description: "Seek justice with expert FIR quashing services in Chandigarh. Advocate Satish Mor provides aggressive representation to protect your legal rights.",
+  },
+  twitter: {
+    description: "Seek justice with expert FIR quashing services in Chandigarh. Advocate Satish Mor provides aggressive representation to protect your legal rights.",
+  },
 };
 
 export default function FIRQuashingPage() {

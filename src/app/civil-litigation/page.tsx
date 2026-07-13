@@ -3,8 +3,14 @@ import ServiceLayout from "@/components/ServiceLayout";
 
 export const metadata: Metadata = {
   title: "Civil Lawyer in Chandigarh | Civil Litigation Advocate Satish Mor",
-  description: "Top Civil Lawyer in Chandigarh. Advocate Satish Mor offers expert legal representation in civil suits, contract disputes, injunctions, and High Court appeals.",
+  description: "Advocate Satish Mor provides strategic civil litigation services in Chandigarh. We resolve complex civil disputes with dedicated High Court representation.",
   keywords: ["Civil Lawyer Chandigarh", "Civil Litigation Chandigarh", "Best Civil Advocate Chandigarh", "Contract Dispute Lawyer", "High Court Civil Lawyer"],
+  openGraph: {
+    description: "Advocate Satish Mor provides strategic civil litigation services in Chandigarh. We resolve complex civil disputes with dedicated High Court representation.",
+  },
+  twitter: {
+    description: "Advocate Satish Mor provides strategic civil litigation services in Chandigarh. We resolve complex civil disputes with dedicated High Court representation.",
+  },
 };
 
 export default function CivilLitigationPage() {

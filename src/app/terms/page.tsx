@@ -4,7 +4,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions | Advocate Satish Mor",
-  description: "Terms and conditions for engaging the legal services of Advocate Satish Mor.",
+  description: "Review terms of service for Advocate Satish Mor's website. Understand the conditions governing legal consultations, representation and digital services.",
+  openGraph: {
+    description: "Review terms of service for Advocate Satish Mor's website. Understand the conditions governing legal consultations, representation and digital services.",
+  },
+  twitter: {
+    description: "Review terms of service for Advocate Satish Mor's website. Understand the conditions governing legal consultations, representation and digital services.",
+  },
 };
 
 export default function TermsConditions() {

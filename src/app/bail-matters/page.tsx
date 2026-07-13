@@ -3,8 +3,14 @@ import ServiceLayout from "@/components/ServiceLayout";
 
 export const metadata: Metadata = {
   title: "Bail Matters Lawyer in Chandigarh | Advocate Satish Mor",
-  description: "Expert Bail Lawyer in Chandigarh handling Anticipatory, Regular, and Default bail applications at District Courts and the Punjab & Haryana High Court.",
+  description: "Secure regular and anticipatory bail in Chandigarh quickly. Advocate Satish Mor offers expert criminal defense and bail assistance at the High Court.",
   keywords: ["Bail Lawyer Chandigarh", "Anticipatory Bail Lawyer Chandigarh", "Regular Bail Advocate", "High Court Bail Lawyer", "Criminal Defense Lawyer"],
+  openGraph: {
+    description: "Secure regular and anticipatory bail in Chandigarh quickly. Advocate Satish Mor offers expert criminal defense and bail assistance at the High Court.",
+  },
+  twitter: {
+    description: "Secure regular and anticipatory bail in Chandigarh quickly. Advocate Satish Mor offers expert criminal defense and bail assistance at the High Court.",
+  },
 };
 
 export default function BailMattersPage() {

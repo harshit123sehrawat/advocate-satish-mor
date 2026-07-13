@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://advocate-satish-mor.vercel.app"),
   title: "Advocate Satish Mor | Lawyer & Legal Services in Chandigarh",
   description:
-    "Official website of Advocate Satish Mor. Legal consultation and representation for Criminal Law, Property Disputes, and Civil Litigation in Chandigarh, Punjab & Haryana. Contact for appointments.",
+    "Advocate Satish Mor is a Criminal Lawyer in Chandigarh specializing in property disputes, civil litigation, bail matters and High Court cases.",
   keywords: [
     "Criminal Lawyer in Chandigarh",
     "Property Lawyer Chandigarh",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Advocate Satish Mor",
     title: "Advocate Satish Mor | Lawyer & Legal Services in Chandigarh",
     description:
-      "Official website of Advocate Satish Mor for legal consultation, representation, and services in Chandigarh, Punjab & Haryana.",
+      "Advocate Satish Mor is a Criminal Lawyer in Chandigarh specializing in property disputes, civil litigation, bail matters and High Court cases.",
     url: "https://advocate-satish-mor.vercel.app/",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Advocate Satish Mor | Lawyer & Legal Services in Chandigarh",
     description:
-      "Official website of Advocate Satish Mor for legal consultation, representation, and services in Chandigarh, Punjab & Haryana.",
+      "Advocate Satish Mor is a Criminal Lawyer in Chandigarh specializing in property disputes, civil litigation, bail matters and High Court cases.",
     images: ["/og-image.png"],
   },
   alternates: {
@@ -111,7 +111,7 @@ const jsonLd = {
       "url": "https://advocate-satish-mor.vercel.app/",
       "image": "https://advocate-satish-mor.vercel.app/og-image.png",
       "logo": "https://advocate-satish-mor.vercel.app/logo.png",
-      "description": "Legal consultation and representation by Advocate Satish Mor.",
+      "description": "Advocate Satish Mor is a Criminal Lawyer in Chandigarh specializing in property disputes, civil litigation, bail matters, and Punjab & Haryana High Court cases.",
       "telephone": "+91-9416280805",
       "email": "advsatishmor@gmail.com",
       "address": {
